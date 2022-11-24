@@ -1319,6 +1319,7 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/api\.touker\.com\/v2\/IAdvertisementAPI\.queryStartAdvertisement url reject-200
 # > 小米商城开屏广告   主机名 api.m.mi.com
 ^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url response-body "data":"skip_splash":false, response-body "data":"skip_splash":true,
+^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/mimall.js
 # > 去除公众号商品推广 主机名 mp.weixin.qq.com
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\?action url reject-dict
 # > RARBG (https://rarbgmirror.org/torrents.php)
