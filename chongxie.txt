@@ -34,8 +34,8 @@ hostname = imeclient.openspeech.cn, m.360buyimg.com, business-cdn.shouji.sogou.c
 ^https:\/\/static.psbc.com:8090\/mbank_f\/images\/[0-9]+\.png - reject-200
 ^https:\/\/mcc.psbc.com:9090\/mcc\/resources\/[0-9]+\.(jpg|png) url reject-200
 # > [0-9]+\.(jpg|png)只拦截纯数字的jpg和png格式图片
-# > 邮储信用卡
-^https?:\/\/d\.psbc\.com:9091\/mcc\/resources\/[0-9]+\.(jpg|png) url reject-200
+# > 邮储信用卡   原规则删除
+^https?:\/\/d\.psbc\.com:9091\/mcc\/resources\/[0-9]+\.(jpg|png|jpeg) url reject-200
 # > 买单吧
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/4A\/trScJ2NBLeOAbspxAARf7S2eu2w554\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/A9\/trScJ2NXhvaAfbl5AAMEtLprhp8025\.jpg url reject-200
